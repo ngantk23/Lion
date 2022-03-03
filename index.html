@@ -9,15 +9,7 @@
 </head>
 
 <body>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="jquery-sakura.min.js"></script>
-    <!-- <script>
-        $(window).load(function() {
-            $("body").sakura({
-                newOn: 100,
-            });
-        });
-    </script> -->
+    <div class="body-bigger"></div>
     <div class="content">
         <img src="./all.png" alt="" class="all" />
         <div class="head-container">
@@ -26,6 +18,15 @@
 
         <img src="./body.png" alt="" class="body" />
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="jquery-sakura.min.js"></script>
+    <script>
+        $(window).load(function() {
+            $(".body").sakura({
+                newOn: 200,
+            });
+        });
+    </script>
 </body>
 
 </html>

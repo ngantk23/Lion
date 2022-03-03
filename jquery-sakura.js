@@ -62,9 +62,9 @@
             blowAnimations: ['blow-soft-left', 'blow-medium-left', 'blow-hard-left', 'blow-soft-right', 'blow-medium-right', 'blow-hard-right'],
             className: 'sakura',
             fallSpeed: 1,
-            maxSize: 14,
-            minSize: 9,
-            newOn: 300,
+            maxSize: 50,
+            minSize: 30,
+            newOn: 200,
             swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5', 'sway-6', 'sway-7', 'sway-8']
         };
 
@@ -76,7 +76,7 @@
         var sakura = $('<div class="' + options.className + '" />');
 
         // Set the overflow-x CSS property on the body to prevent horizontal scrollbars.
-        $('body').css({ 'overflow-x': 'hidden' });
+        // $('body').css({ 'overflow': 'hidden' });
 
         // Function that inserts new petals into the document.
         var petalCreator = function () {
@@ -121,7 +121,7 @@
                     'margin-top': startPosTop,
                     width: size
                 })
-                .appendTo('body');
+                .appendTo('.body-bigger');
         };
 
 
