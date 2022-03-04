@@ -37,11 +37,12 @@ body {
 .head-container {
     position: absolute;
     width: 100%;
-    height: 132%;
+    height: 135%;
     top: 0;
-    left: 0;
+    left: -4px;
     -webkit-animation: turnaround 0.7s infinite linear;
     animation: turnaround 0.7s infinite linear;
+    z-index: 10;
 }
 
 .head {
