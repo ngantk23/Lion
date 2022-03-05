@@ -11,6 +11,9 @@
 
 <body>
     <div class="body-bigger"></div>
+    <div class="boat-layerr">
+        <img onClick="playMyAudio()" src="./boat.png" alt="" class="boat-img" />
+    </div>
     <div class="content">
         <img src="./all.png" alt="" class="all" />
         <div class="head-container">
@@ -19,20 +22,22 @@
 
         <img src="./body.png" alt="" class="body" />
     </div>
-    <audio id="myAudio" loop> 
+    <audio id="'myAudio" loop>
       <source src="./song.mp3" type="audio/mpeg" />
     </audio>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="jquery-sakura.min.js"></script>
     <script>
+        function playMyAudio() {
+            $("audio")[0].play();
+            $(".boat-layerr").addClass("hide-boat-layer");
+            $('.boat-img').addClass('fly-away');
+        }
         $(window).load(function() {
             $(".body-bigger").sakura({
                 newOn: 200,
                 fallSpeed: 0.3,
             });
-            var x = document.getElementById("myAudio");
-            x.play();
-
         });
     </script>
 </body>
