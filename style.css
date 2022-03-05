@@ -86,39 +86,15 @@ body {
     transform: translate(-50%, -50%);
     -webkit-animation: resize 01.2s infinite linear;
     animation: resize 01.2s infinite linear;
-    transition: all 2s;
+    transition: all 2.5s;
 }
 
 .fly-away {
     top: 0%;
     left: 100%;
-    /* transform: translate(0, 0); */
     opacity: 0;
-    -webkit-animation: resize .5s infinite linear;
-    animation: resize .5s infinite linear;
-}
-
-@keyframes flyAway {
-    0% {
-        top: 35% !important;
-        left: 35%;
-        opacity: 0.9;
-    }
-    25% {
-        top: 20% !important;
-        left: 5%;
-        opacity: 0.5;
-    }
-    75% {
-        top: 40% !important;
-        left: 35%;
-        opacity: 0.3;
-    }
-    100% {
-        top: 40% !important;
-        left: 35%;
-        opacity: 0;
-    }
+    -webkit-animation: resize .6s infinite linear;
+    animation: resize .6s infinite linear;
 }
 
 @keyframes turnaround {
